@@ -516,4 +516,3 @@ ${serverQueue.songs.map(song => `**-** ${song.title}`).join('\n')}
 
 
 client.login(process.env.TOKEN_BOT);
-© 2018 GitHub, Inc.
