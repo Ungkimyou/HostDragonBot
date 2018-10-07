@@ -25,7 +25,7 @@ client.on("message", async message => {
       let commandFile = require(`./commands/${command}.js`);
       commandFile.run(client, message, args );
    
-	let guildCreateDelete = client.channels.get("494688036215586836");
+	let guildCreateDelete = client.channels.get("496512518533939200");
   
   let log = new Discord.RichEmbed()
     .setTitle('dragon bot')
