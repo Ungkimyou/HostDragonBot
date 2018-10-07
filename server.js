@@ -1,21 +1,17 @@
 // Discord.js bot
-
-const Discord = require("discord.js");
+const Discord = require('discord.js');
 const client = new Discord.Client();
 const http = require('http');
 const YouTube = require('simple-youtube-api');
 const youtube = new YouTube('AIzaSyAiXso9DqLY7G6Iey-_9XQXE63NaWMojdg');
-const queue = new Map(); 
 const ytdl = require('ytdl-core'); 
 const ffmpeg = require('ffmpeg'); 
-const figlet = require("figlet")
-const prefix = 'd!';
+const prefix = '.';
 const ownerID = '424916247696900135'
-const snekfetch = require("snekfetch")
 const fs = require("fs");
-const db = require("quick.db")
 
 
+const queue = new Map(); 
 
 
 ////////////commands////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -59,7 +55,18 @@ fs.readdir("./events/", (err, files) => {
   });
 });
 
+//////d!///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+client.on("message", (message) => {
+  if(message.content === "d!") {
+    message.channel.send("`Do d!help for show help commands !`");
+    message.delete(10000)
+  }
+
+});
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
