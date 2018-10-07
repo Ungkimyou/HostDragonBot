@@ -12,6 +12,10 @@ const figlet = require("figlet")
 const prefix = 'd!';
 const ownerID = '424916247696900135'
 const snekfetch = require("snekfetch")
+const fs = require("fs");
+const db = require("quick.db")
+
+
 
 
 ////////////commands////////////////////////////////////////////////////////////////////////////////////////////////////////
